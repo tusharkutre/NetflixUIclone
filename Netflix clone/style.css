@@ -1,0 +1,349 @@
+*
+{
+    /* overflow: hidden; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    /* font-size: xx-large; */
+}
+:root
+{
+    --padding-inline-section:25px;
+}
+.container
+{
+ max-width: 1180px;
+ margin-inline: auto;
+ padding-inline: var(--padding-inline-section);
+ /* box-shadow: 0 0 10px; */
+ overflow: hidden;
+}
+body
+{
+    background-color: black;
+    color: white;
+}
+.flex
+{
+    display: flex;
+    align-items: center;
+}
+/* component-1 Header Design(style) */
+
+.header
+{
+    /* background-color: #222; */
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7))
+    ,url(assets/bgimg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 30px 50px;
+    /* top-bottom:10px left-right:40px */
+    /* background-blend-mode:overlay ; */
+}
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav>.logo
+{
+  width: 150px;
+  cursor: pointer;
+}
+.dropdown
+{
+ width: 10px;
+ margin-left: 8px;
+}
+button
+{
+    color: white;
+    outline: none;
+    border: none;
+    background-color: #db0001;
+    padding: 10px 20px;
+    margin-left: 20px;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.btn-1
+{
+    padding: 10px 14px;
+    display: inline-flex;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+/* component-2 sub-header  */
+.sub-header
+{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+    text-align: center;
+}
+.sub-header>h1
+{
+    font-weight:bolder;
+    font-size: 50px;
+    line-height: 70px;
+    max-width: 1650px;
+}
+.sub-header h3
+{
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 70px;
+}
+.sub-header p
+{
+    font-size: 18px;
+    /* font-weight: 100; */
+    line-height: 40px;
+}
+.new
+{
+    margin-left: 50px;
+}
+.email-signup
+{
+
+  max-width: 650px;
+ /* background: white; */
+ border-radius: 2px;
+ display: flex;
+ align-items: center;
+ margin: 20px auto 20px;
+ overflow: hidden;
+ 
+}
+.email-signup>input
+{
+    padding-left: 15px;
+    border-radius: 3px;
+    padding-block: 15px;
+    font-size: 20px;
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 10px;
+}
+.email-signup>.btn-3
+{
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: bold;
+  border-radius: 0;
+  padding-block: 15px;
+  border-radius: 3px;
+}
+
+.line
+{
+    padding: 3px; 
+    background-color: rgba(128, 128, 128, 0.407);
+}
+
+/* component-1 design */
+
+.feature-section
+{
+    padding-block: 50px;
+}
+.row-1
+{
+    column-gap: 100px;
+    /* align-items: center; */
+    /* max-width: 1110px; */
+    /* margin: 0 auto; */
+}
+.text-box-1
+{
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: flex-start;
+}
+.text-box-1 h2
+{
+    font-size: 50px;
+    display: block;   
+}
+.text-box-1 p
+{
+    width: 500px;
+    line-height: 30px;
+  margin-top: 20px;
+  font-size: 25px;
+}
+.animation-box-1 img
+{
+    width: 100%;
+}
+
+/* component-2 design */
+.feature-2
+{
+    padding-block: 60px;
+}
+.row-2
+{
+    column-gap: 150px;
+}
+.img-2 img
+{
+    width: 110%;
+}
+.text-box-2 h1
+{
+    display: block;
+    font-size: 45px;
+}
+.text-box-2 p
+{
+    margin-top: 20px;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+/* component-3 design */
+.direction-1
+{
+    flex-direction: row-reverse;
+}
+
+/* component-4 design */
+.child img
+{
+    width: 150%;
+}
+#small-box
+{
+    padding-left: 50px;
+}
+#box-2
+{
+    justify-content: space-between;
+}
+
+/* component-5 design */
+.sub-parent
+{
+    box-sizing: border-box;
+    padding: 70px 45px;
+}
+.heading
+{
+    font-size: 50px;
+    text-align: center;
+}
+.question
+{
+    text-align: center;
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.question li
+{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.question li label
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 28px;
+    font-weight: 500;
+    background-color: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+.question .content
+{
+    max-height: 0;
+    overflow: hidden;
+}
+.content p
+{
+    background-color: #303030;
+    text-align: left;
+    padding: 1.2rem;
+    font-size: 25px;
+}
+label::after
+{
+    content: '+';
+    font-size: 40px;
+    position: absolute;
+    right: 20px;
+}
+
+input[type="radio"]
+{
+    display: none;
+}
+.question input[type="radio"]:checked + label + .content
+{
+    max-height: 600px;
+}
+
+/* component-6 design */
+.parent-1
+{
+    padding: 70px 45px;
+}
+.class
+{
+    line-height: 40px;
+    list-style: none;
+    border: solid 2px white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.child-1
+{
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* justify-content: center; */
+    /* column-gap: 100px; */
+    row-gap: 30px;
+}
+.color
+{
+    color: #8a8282;
+}
+
+.parent-1 .call
+{
+    padding-left: 0px;
+    margin-bottom: 40px;
+}
+.top
+{
+    padding-block: 20px;
+}
+.netflix-india
+{
+    font-size: small;
+}
+#btn-en
+{
+    padding: 15px 20px;
+    margin-left: 0;
+    margin-block: 15px;
+    border: 1.5px solid #303030;
+    /* border-color: #303030; */
+}
